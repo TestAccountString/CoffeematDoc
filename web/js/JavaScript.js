@@ -1,19 +1,25 @@
-var modal = document.getElementsByClassName('myModal')[0];
-var navBar = document.getElementsByClassName("navBar")[0];
-var img = document.getElementsByClassName('myImg')[0];
-var modalImg = document.getElementsByClassName("img01")[0];
-var caption = document.getElementsByClassName("caption")[0];
-var captionText = "Erstes Klassendiagramm";
-console.log(img);
-img.onclick = function() {
-    navBar.style.zIndex = "0";
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    caption.innerHTML = captionText;
-};
+$(document).ready(function () {
+    $footer = $("#footer");
 
-var span = document.getElementsByClassName("close")[0];
+    function positionFooter() {
+        if ($(document).height() > $(window).height()) {
+            $footer.css({
+                position: "absolute", top: $(window).height() - $footer.height() + $(document).scrollTop()
+            });
+            console.log($(window).height() - $footer.height());
+        } else {
+            $footer.css({
+                position: "static"
+            })
+        }
+    }
 
-span.onclick = function () {
-    modal.style.display = "none";
-};
+    $(window)
+        .on("resize", function () {
+            positionFooter();
+        }).on("scroll", function () {
+        positionFooter();
+    });
+
+    positionFooter();
+});
