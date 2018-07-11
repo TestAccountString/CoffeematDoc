@@ -5,99 +5,78 @@
     <title>Dokumentation der Kaffeemaschine</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/JavaScript.js"></script>
 </head>
 <body style="z-index: 1; overflow-x: hidden;">
 <a id="top"></a>
 <div class="container-fluid"> <!--  Für Responsive Design wird container-fluid (wie flüssigkeit) benutzt -->
     <nav id="navBar">
-        <div class="row">
+        <div class="row col-eq">
             <div class="col-xs-12">
-                <div class="col-xs-3"><a href="#project" title="Beschreibung des Projektes"> Das Projekt
-                    "Kaffeemaschine" </a>
-                </div>
-                <div class="col-xs-3"><a href="#oop" title="Was ist die Objekt Orientierte Programmierung"> Objekt
-                    Orientierte Programmierung </a></div>
-                <div class="col-xs-3"><a href="#procedure_tools"
-                                         title="Ablauf des Projektes, welche Tools und Konfigurationen wurden benutzt">Ablauf
-                    &
-                    Tools </a></div>
-                <div class="col-xs-2"><a href="#description" title="Erklärung des Programmcodes"> Code Beschreibung </a>
-                </div>
+                <div class="col-xs-3"><a href="#project" title="Beschreibung des Projektes"> Das Projekt "Coffeemat" </a></div>
+                <div class="col-xs-3"><a href="#oop" title="Was ist die Objekt Orientierte Programmierung"> Objekt Orientierte Programmierung </a></div>
+                <div class="col-xs-3"><a href="#procedure_tools" title="Ablauf des Projektes, welche Tools und Konfigurationen wurden benutzt">Ablauf & Tools </a></div>
+                <div class="col-xs-2"><a href="#description" title="Erkl&auml;rung des Programmcodes"> Code Beschreibung </a></div>
                 <div class="col-xs-1"><a href="images.html" title="Alle Bilder auf einer Seite">Bilder</a></div>
             </div>
         </div>
     </nav>
-    <div style="height:36px" id="project"></div> <!-- Abstand zwsichen NavBar und Text-->
-    <hr>
-    <div class="row " style="padding-top: 0.1%">
+    <div class="row col-eq topicBgColor" id="project">
         <div class="col-xs-6 redColor">
             Allgemeine Informationen zum Projekt Kaffeemaschine
         </div>
-        <div class="row">
-            <div class="col-xs-6 w-wrap leftBorderColor">
-                Das Projekt Kaffeemaschine entwickelte sich aus dem einzigen Grund um die Objekt Orientierte
-                Programmierung genauer kennenzulernen.
-            </div>
+        <div class="col-xs-6 w-wrap explanationBgColor">
+            Das Projekt Kaffeemaschine entwickelte sich aus dem einzigen Grund um die Objekt Orientierte
+            Programmierung genauer kennenzulernen.
         </div>
     </div>
-    <div class="row ">
+    <div class ="fieldDivider" id ="oop"> </div>
+    <div class="row col-eq topicBgColor">
         <div class="col-xs-6 redColor">
-            <a id="oop"></a>
-            <hr>
             Worin liegt der Fokus in der Objekt Orientierten Programmierung?
         </div>
-        <div class="row">
-            <div class="col-xs-6 w-wrap leftBorderColor">
-                <hr>
-                Der Fokus der Objekt Orientierten Programmierung liegt darin Objekte genau wie in der Realität als
-                Programmcode zu schreiben.<br>
-                Einer dieser Objekt Orientierten Programmiersprachen, mit der auch dieses Projekt entwickelt wurde,
-                ist Java von Sun microsystems (durch Oracle Corporation übernommen).
-            </div>
+        <div class="col-xs-6 w-wrap explanationBgColor">
+            Der Fokus der Objekt Orientierten Programmierung liegt darin Objekte genau wie in der Realit&auml;t als
+            Programmcode zu schreiben.<br>
+            Einer dieser Objekt Orientierten Programmiersprachen, mit der auch dieses Projekt entwickelt wurde,
+            ist Java von Sun microsystems (durch Oracle Corporation &uuml;bernommen).
         </div>
     </div>
-    <div class="row ">
+    <div class ="fieldDivider"> </div>
+    <div class="row col-eq topicBgColor">
         <div class="col-xs-6 redColor">
-            <hr>
             Was ist die Objekt Orientierte Programmierung im
             Allgemeinen?
         </div>
-        <div class="row">
-            <div class="col-xs-6 w-wrap leftBorderColor">
-                <hr>
-                Mit der <p class="marker yellowMarker" style="display:inline;" title="Objekt Orientiere Programmierung"
-                           data-toggle="tooltip">OOP</p>
-                wird Programmcode und Daten wiederverwendbar und übersichtlich in sogenannte Objekte gekapselt.<br>
-                Genau wie in der Realität, werden in der OOP auch Objekte erstellt mit Attributen (Eigenschaften).
-                <br><br>
-                Eine Klasse könnte zum Beispiel der Entwurf für eine W&auml;hrung sein, worin dann die allgemeinen
-                Eigenschaften beschrieben werden.
-                Diese Klasse wäre nun wiederverwendbar und könnte als Objekt im Zentralen Programmcode erstellt und
-                aufgerufen werden.
-                Hinzu könnte man nun weitere Instanzen der Klasse erstellen für zum Beispiel weitere Währungen ohne
-                dabei die originale Klasse zu
-                verändern.
-            </div>
+        <div class="col-xs-6 w-wrap explanationBgColor">
+            Mit der <p class="marker yellowMarker" style="display:inline;" title="Objekt Orientiere Programmierung" data-toggle="tooltip">OOP</p>
+            wird Programmcode und Daten wiederverwendbar und &uuml;bersichtlich in sogenannte Objekte gekapselt.<br>
+            Genau wie in der Realit&auml;t, werden in der OOP auch Objekte erstellt mit Attributen (Eigenschaften).
+            <br><br>
+            Eine Klasse k&ouml;nnte zum Beispiel der Entwurf f&uuml;r eine W&auml;hrung sein, worin dann die allgemeinen
+            Eigenschaften beschrieben werden.
+            Diese Klasse w&auml;re nun wiederverwendbar und k&ouml;nnte als Objekt im Zentralen Programmcode erstellt und
+            aufgerufen werden.
+            Hinzu k&ouml;nnte man nun weitere Instanzen der Klasse erstellen f&uuml;r zum Beispiel weitere W&auml;hrungen ohne
+            dabei die originale Klasse zu
+            ver&auml;ndern.
         </div>
     </div>
-    <div class="row ">
+    <div class ="fieldDivider"> </div>
+    <div class="row col-eq topicBgColor">
         <div class="col-xs-6 redColor">
-            <hr>
             Unterschiede zwischen der Objekt Orientierten
             Programmierung und der Funktionalen Programmierung
         </div>
-        <div class="row divRgColor">
-            <div class="col-xs-6 w-wrap leftBorderColor">
-                <hr>
-                Während man mit der Objekt Orientierten Programmierung beschreibt <b>wie</b> etwas (Code) auszuführen
+            <div class="col-xs-6 w-wrap explanationBgColor">
+                W&auml;hrend man mit der Objekt Orientierten Programmierung beschreibt <b>wie</b> etwas (Code) auszuf&uuml;hren
                 ist,
-                wird hingegen in der Funktionalen Programmierung beschrieben <b>was</b> auszuführen (Code) ist.
+                wird hingegen in der Funktionalen Programmierung beschrieben <b>was</b> auszuf&uuml;hren (Code) ist.
                 <br><br>
-
                 Die <b>Objekt Orientierte Programmierung</b> hingegen ist eher auf die Details des Entwurfes der
                 Klasse(n) fokusiert.<br>
-                In der Funktionalen Programmierung werden Funktionen erstellt um Problem zu lösen.<br>
+                In der Funktionalen Programmierung werden Funktionen erstellt um Problem zu l&ouml;sen.<br>
                 Dazu werden die Funktionen in Funktionalen Programmiersprachen meistens eher im mathematischen Sinne
                 benutzt.<br>
                 Nun folgt eine Auflistung einiger Funktionalen Programmiersprachen:
@@ -110,287 +89,290 @@
                     <li> Scala</li>
                     <li> Java (seit Java 8)</li>
                     <li> Swift</li>
-                    <li> XSLT</li>
+                    <li id="procedure_tools"> XSLT</li>
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="row ">
-        <div class="col-xs-6 redColor">
-            <hr>
+    <div class ="fieldDivider"> </div>
+    <div class="row col-eq topicBgColor">
+        <div class="col-xs-6 redColor ">
             Ablauf des Projektes Kaffemaschine
         </div>
-        <div class="row">
-            <div class="col-xs-6 w-wrap leftBorderColor">
-                <a id="procedure_tools"></a>
-                <hr>
-                <ul id="projectProtocol">
-                    <li>Zuerst wurde eine reale Kaffeemaschine untersucht. Während der Untersuchung wurde herausgestellt
-                        ,welche Komponente eine Kaffeemaschine besitzt.<br/>Vom Behälter bis zu den Knöpfen wurde jedes
-                        einzelne
-                        Objekt notiert und ihre Eigenschaften beschrieben.<br/><br>Bevor es an die Entwicklung geht,
-                        musste
-                        zuerst ein <b>U</b>nified <b>M</b>odeling <b>L</b>anguage Diagramm gezeichnet werden.<br/>Von
-                        den
-                        etlichen Arten an
-                        UML Diagrammen die es zur Auswahl gibt ,sollte das sogenannte Klassendiagramm auf alle Fälle
-                        mehr als
-                        ausreichend sein.
-                    </li>
-                    <h2>Die erste Kaffeemaschine</h2>
-                    Das erste Klassendiagramm:<br>
-                    <a href="assets/firstCoffemat.png" target="_blank">
-                        <img src="assets/firstCoffemat.png" width="300" height="200"/>
+        <div class="col-xs-6 w-wrap explanationBgColor">
+            <ul id="projectProtocol">
+                <li>Zuerst wurde eine reale Kaffeemaschine untersucht. W&auml;hrend der Untersuchung wurde herausgestellt
+                    ,welche Komponente eine Kaffeemaschine besitzt.<br/>Vom Beh&auml;lter bis zu den Kn&ouml;pfen wurde jedes
+                    einzelne
+                    Objekt notiert und ihre Eigenschaften beschrieben.<br/><br>Bevor es an die Entwicklung geht,
+                    musste
+                    zuerst ein <b>U</b>nified <b>M</b>odeling <b>L</b>anguage Diagramm gezeichnet werden.<br/>Von
+                    den
+                    etlichen Arten an
+                    UML Diagrammen die es zur Auswahl gibt ,sollte das sogenannte Klassendiagramm auf alle F&auml;lle
+                    mehr als
+                    ausreichend sein.
+                </li>
+                <h2>Die erste Kaffeemaschine</h2>
+                Das erste Klassendiagramm:<br>
+                <a href="assets/firstCoffemat.png" target="_blank">
+                    <img src="assets/firstCoffemat.png" width="474"/>
+                </a>
+                <br>
+                <li>Nachdem das Klassendiagramm fertig gezeichnet wurde, war man nun bereit dem Ausbilder das
+                    Diagramm zu
+                    zeigen und sofern es in Ordnung war auch die ersten Zeilen des Programms zu schreiben.
+                </li>
+                <li> Zuerst wurde im IntelliJ das Projekt als ein Java Projekt erstellt.<br>
+                    Dazu wird unter dem Reiter Java w&auml;hrend der Projekt Erstellung kein Framework ausgew&auml;hlt.<br>
+                <li>Nachdem das Projekt generiert wurde, sollte die Erstellung der jeweiligen Klassen im UML
+                    Diagramm
+                    die Basis der Kaffemaschine aufbauen.<br> Nachdem alle Eigenschaften der Klassen definiert
+                    wurden, ging
+                    es auch mit der Logik der Maschine weiter.
+                </li>
+                <li>Die "Machine" Klasse ist sozusagen die Zentraleinheit des
+                    Projektes und sollte daher so beschrieben werden, wie auch wirklich eine Kaffeemaschine
+                    aufgebaut ist.<br>Die Klasse tr&auml;gt alle Beh&auml;lter, Kn&ouml;pfe und selbst die Rezepte.<br>Die Klasse
+                    Display
+                    dient als
+                    Ausgabe, daher sollten alle Ausgaben &uuml;ber das Display ausgef&uuml;hrt werden.
+                </li>
+                <li>Zu guter Letzt wurde die
+                    Kaffeemaschine
+                    (also die Machine Klasse) in der Main Klasse als Objekt erstellt und per Eingabe &uuml;ber das
+                    IntelliJ
+                    Console Fenster
+                    wurde die jeweilige Taste "gedr&uuml;ckt".
+                </li>
+                <li>Zu dem Zeitpunk wurden keine Informationen gespeichert, das heißt sobald der Bohnenbeh&auml;lter
+                    bef&uuml;llt
+                    wurde und der Benutzer per Eingabe oder gewollt das Programm beendet wurde, dann wurden die
+                    Eingebenen
+                    Werte nicht gespeichert.
+                </li>
+                <li>Somit w&uuml;rde man die Kaffeemaschine nur tempor&auml;r benutzen k&ouml;nnen.<br>
+                    Dieser Informationsverlust wurde zuerst &uuml;bersehen, da es zu dem Zeitpunkt nur darum ging, eine
+                    Kaffeemaschine (objekt orientiert) zu entwickeln.
+                </li>
+                Im folgenden Bild sind alle Klassen, die f&uuml;r die erste Kaffemaschine ben&ouml;tigt werden zu sehen. <br>
+                <li>Wichtig ist noch anzumerken, dass die Klasse <em class="marker orangeMarker" data-toggle="tooltip" title="Eigene erstellte Klasse f&uuml;r Animationen in der IntelliJ IDE Console">Specialeffects</em>
+                    optional ist. <br>
+                    Sie beinhaltet nur eine Reihe von Outputs ,welche als eine Art Animation in der Console zu sehen
+                    sind.<br>
+                    Somit hat die Klasse keinerlei Methoden oder Informationen die im Verlauf des Projektes von
+                    N&ouml;ten sind.<br>
+                    Im n&auml;chsten Bild sind <b>alle Klassen und weitere Dateien</b> zu sehen.
+                    <a href="assets/ersteKm_ClassTree.png" target="_blank">
+                        <img src="assets/ersteKm_ClassTree.png" width="200"/>
                     </a>
-                    <br>
-                    <li>Nachdem das Klassendiagramm fertig gezeichnet wurde, war man nun bereit dem Ausbilder das
-                        Diagramm zu
-                        zeigen und sofern es in Ordnung war auch die ersten Zeilen des Programms zu schreiben.
-                    </li>
-                    <li> Zuerst wurde im IntelliJ das Projekt als ein Java Projekt erstellt.<br>
-                        Dazu wird unter dem Reiter Java während der Projekt Erstellung kein Framework ausgewählt.<br>
-                    <li>Nachdem das Projekt generiert wurde, sollte die Erstellung der jeweiligen Klassen im UML
-                        Diagramm
-                        die Basis der Kaffemaschine aufbauen.<br> Nachdem alle Eigenschaften der Klassen definiert
-                        wurden, ging
-                        es auch mit der Logik der Maschine weiter.
-                    </li>
-                    <li>Die "Machine" Klasse ist sozusagen die Zentraleinheit des
-                        Projektes und sollte daher so beschrieben werden, wie auch wirklich eine Kaffeemaschine
-                        aufgebaut ist.<br>Die Klasse trägt alle Behälter, Knöpfe und selbst die Rezepte.<br>Die Klasse
-                        Display
-                        dient als
-                        Ausgabe, daher sollten alle Ausgaben über das Display ausgeführt werden.
-                    </li>
-                    <li>Zu guter Letzt wurde die
-                        Kaffeemaschine
-                        (also die Machine Klasse) in der Main Klasse als Objekt erstellt und per Eingabe über das
-                        IntelliJ
-                        Console Fenster
-                        wurde die jeweilige Taste "gedrückt".
-                    </li>
-                    <li>Zu dem Zeitpunk wurden keine Informationen gespeichert, das heißt sobald der Bohnenbehälter
-                        befüllt
-                        wurde und der Benutzer per Eingabe oder gewollt das Programm beendet wurde, dann wurden die
-                        Eingebenen
-                        Werte nicht gespeichert.
-                    </li>
-                    <li>Somit würde man die Kaffeemaschine nur temporär benutzen können.<br>
-                        Dieser Informationsverlust wurde zuerst übersehen, da es zu dem Zeitpunkt nur darum ging, eine
-                        Kaffeemaschine (objekt orientiert) zu entwickeln.
-                    </li>
-                    Im folgenden Bild sind alle Klassen, die für die erste Kaffemaschine benötigt werden zu sehen. <br>
-                    <li>Wichtig ist noch anzumerken, dass die Klasse <em class="marker orangeMarker"
-                                                                         data-toggle="tooltip"
-                                                                         title="Eigene erstellte Klasse für Animationen in der IntelliJ IDE Console">Specialeffects</em>
-                        optional ist. <br>
-                        Sie beinhaltet nur eine Reihe von Outputs ,welche als eine Art Animation in der Console zu sehen
-                        sind.
-                        Somit hat die Klasse keinerlei Methoden oder Informationen die im Verlauf des Projektes von
-                        Nöten sind.
-                        Im nächsten Bild sind <b>alle Klassen und weitere Dateien</b> zu sehen.
-                        <img src="assets/ersteKm_ClassTree.png" height="260px" width="200px"/>
-                    </li>
-                    <h2>Die Zweite Kaffeemaschine</h2>
-                    Das zweite Klassendiagramm:<br>
-                    <a href="assets/zweiteKmschnUML.png" target="_blank">
-                        <img src="assets/zweiteKmschnUML.png" width="340" height="240"/>
-                    </a>
-                    <br>
-                    <li>
-                        Aufgrund des vorherig genannten Informationsverlustes, des Verbesserungspotential und um die
-                        Objekt Orientierte Programmierung weiterhin zu üben, wurde eine Zweite Kaffeemaschine
-                        erstellt.<br>
-                        Hier wurde jedoch ein anderer Anlauf genommen als zuvor!
-                        Nun wurde auf die Klasse Containment, Deactivatable und Exit verzichtet.
-                        Hinzu kamen die Klasse PersistentData (Speicherung der Werte) und eine .properties Datei für
-                        Konstanten / Werte die bestehen bleiben (z.B.:Kapazität)
-                    </li>
-                    Bereits erkennbar ist, dass die neue Version der Kaffeemaschine deutlich kompakter aussieht.<br>
-                    Anhand des selbst erstellten Klassendiagramms wurden die ersten Klassen in IntelliJ schnell und
-                    verständlich erstellt und
-                    aufgebaut bzw. definiert. <br>
-                    <br>
-                    Sobald alle Klassen der Kaffeemaschine aufgebaut waren, ging es an die so genannte JSP Datei.<br>
-                    Dies kann einfach erledigt werden indem man mit der rechten Maustaste auf das Menü drückt und auf
-                    Scratch File klickt.<br>
-                    In dem Scratch File Menü, sollte nun eine Liste von Datei Endungen zu sehen sein. <br>Während des
-                    runterscrollens wird man auf eine .JSP fündig.<br>
-                    Wird dieses Feld ausgewählt, so sollte nun eine neue Datei erstellt werden.
-                    <br>
-                    Zuletzt muss die Run Configuration auf Tomcat umgestellt werden.<br>
-                    Dazu wird oben rechts im Drop-Down Menu "Edit Configuration" ausgewählt,<br> danach auf das grüne
-                    Plus Zeichen oben<br> links -> Tomcat -> Local -> Unter dem Drop Down Menü 'Application Server' wird
-                    falls bereits existierend 'Tomcat' ausgewählt, falls nicht dann muss der Tomcat Installations Ordner
-                    ausgewählt werden.
-                    Nun wurde mit Hilfe von HTML und CSS die Seite Schritt für Schritt aufgebaut.<br>
-                </ul>
-            </div>
+                </li>
+                <h2>Die Zweite Kaffeemaschine</h2>
+                Das zweite Klassendiagramm:<br>
+                <a href="assets/zweiteKmschnUML.png" target="_blank">
+                    <img src="assets/zweiteKmschnUML.png" width="474"/>
+                </a>
+                <br>
+                <li>
+                    Aufgrund des vorherig genannten Informationsverlustes, des Verbesserungspotential und um die
+                    Objekt Orientierte Programmierung weiterhin zu &uuml;ben, wurde eine Zweite Kaffeemaschine
+                    erstellt.<br>
+                    Hier wurde jedoch ein anderer Anlauf genommen als zuvor!
+                    Nun wurde auf die Klasse Containment, Deactivatable und Exit verzichtet.
+                    Hinzu kamen die Klasse PersistentData (Speicherung der Werte) und eine .properties Datei f&uuml;r
+                    Konstanten / Werte die bestehen bleiben (z.B.:Kapazit&auml;t)
+                </li>
+                Bereits erkennbar ist, dass die neue Version der Kaffeemaschine deutlich kompakter aussieht.<br>
+                Anhand des selbst erstellten Klassendiagramms wurden die ersten Klassen in IntelliJ schnell und
+                verst&auml;ndlich erstellt und
+                aufgebaut bzw. definiert. <br>
+                <br>
+                Sobald alle Klassen der Kaffeemaschine aufgebaut waren, ging es an die so genannte JSP Datei.<br>
+                Dies kann einfach erledigt werden indem man mit der rechten Maustaste auf das Men&uuml; dr&uuml;ckt und auf
+                Scratch File klickt.<br>
+                In dem Scratch File Men&uuml;, sollte nun eine Liste von Datei Endungen zu sehen sein. <br>W&auml;hrend des
+                runterscrollens wird man auf eine .JSP f&uuml;ndig.<br>
+                Wird dieses Feld ausgew&auml;hlt, so sollte nun eine neue Datei erstellt werden.
+                <br>
+                Zuletzt muss die Run Configuration auf Tomcat umgestellt werden.<br>
+                Dazu wird oben rechts im Drop-Down Menu "Edit Configuration" ausgew&auml;hlt,<br> danach auf das gr&uuml;ne
+                Plus Zeichen oben<br> links -> Tomcat -> Local -> Unter dem Drop Down Men&uuml; 'Application Server' wird
+                falls bereits existierend 'Tomcat' ausgew&auml;hlt, falls nicht dann muss der Tomcat Installations Ordner
+                ausgew&auml;hlt werden.
+                Nun wurde mit Hilfe von HTML und CSS die Seite Schritt f&uuml;r Schritt aufgebaut.<br>
+            </ul>
         </div>
     </div>
-        <div class="col-xs-6 redColor">
-            <hr>
-            - Welche Hilfsmittel bzw. Programme und Konfigurationen wurden benutzt?
+    <div class ="fieldDivider"> </div>
+    <div class="row col-eq">
+        <div class="col-xs-6 redColor topicBgColor">
+            Welche Hilfsmittel bzw. Programme und Konfigurationen wurden benutzt?
         </div>
-    <hr>
-    <div class="col-xs-6 w-wrap leftBorderColor">
-            Grundsätzlich wurden folgende Programme benötigt um das Projekt zu vollenden:<br>
-    </div>
-    <table class="table table-borderless">
+        <div class="col-xs-6 w-wrap explanationBgColor">
+            Grunds&auml;tzlich wurden folgende Programme ben&ouml;tigt um das Projekt zu vollenden:<br>
+        </div>
+    <table class="table">
         <thead>
-        <th>Überschrift</th>
-        <th>Beschreibung</th>
-        <th>Bedeutung</th>
+            <th>&Uuml;berschrift</th>
+            <th>Beschreibung</th>
+            <th>Bedeutung</th>
         </thead>
         <tbody>
-        <tr class="blueRowColor">
-            <th style="padding-top: 1.3%;"><a href="https://java.com/de/download/"
-                                              style="text-decoration: none;color: #000;">Java JDK 8</a><br> (Java
-                Development Kit)
-            </th>
-            <td> Das JDK (Java Development Kit) wird benötigt um das Geschriebene vom Entwickler zum sogenannten
-                Bytecode zu übersetzen, welcher
-                auf allen anderen Platformen und Rechnern anhand der JRE (Java Runtime Environment) ausgeführt
-                werden kann.
-            </td>
-            <td>beinhaltet die Java JRE 8 bereits (Java Runtime Environment)</td>
-        </tr>
-        <tr class="lightGreyRowColor">
-            <th style="padding-top: 4%;"><a href="https://www.jetbrains.com/idea/download"
-                                            style="text-decoration: none;color: #000;">IntelliJ
-                IDEA Ultimate Edition</a> (Entwicklungsumgebung)
-            </th>
-            <td> Eine Entwicklungsumgebung bzw.<br>
-                IDE (Integrated Development Environment) ist notwendig um als
-                Entwickler vernünftig zu arbeiten. IntelliJ ist nur eine von vielen IDE's, jedoch bietet es
-                deutlich mehr Methoden und Möglichkeiten als z.B. Eclipse oder gar Notepad. IDE's bieten sehr
-                nützliche Features wie Syntax Highlighting, Quelltextformatierung, Projekt Strukturierung und
-                mehr...
-            <td>
-                Verfügbar als Ultimate (30 Tage Testversion) oder Community Edition (Kostenlose, eingeschränkte
-                Version). <br>Tomcat ist <b>nur in der Ultimate Version verfügbar</b>!
-            </td>
-        </tr>
-        <tr class="blueRowColor">
-            <th style="padding-top: 2.5%;"><a href="https://www.apachefriends.org/de/index.html"
-                                              style="text-decoration: none; color: #000;">
-                Apache Tomcat 8</a></th>
-            <td> Apache Tomcat ist eine Software, die in der Lage ist eine JSP Datei,
-                also eine Datei die teils aus der Programmiersprache Java und der
-                Auszeichnungssprache HTML besteht, als zugreifbare Webseite zu starten.
-            </td>
-            <td>
-                Die Software "Apache XAMPP" wurde im Projekt benutzt, da die Software bereits Tomcat beinhaltet.
-            </td>
-        </tr>
-        <tr class="lightGreyRowColor">
-            <th style="padding-top: 3%;">
-                <a href="https://git-scm.com/" style="text-decoration: none; color: #000;">Git</a>
-                &
-                <a href="https://github.com/" style="text-decoration: none; color: #000;"> Github</a> (Optional)
-                </a>
-            </th>
-            <td>
-                Git in Verbindung mit Github.com wird benutzt um eventuell den Zustand
-                des Projektes als Backup (Repository) auf Github.com hochzuladen.
-            </td>
-            <td>
-                Git & Github.com sind optional und dienen jediglich als Backup für das Projekt oder eine Iteration des
-                Projektes.
-            </td>
-        </tr>
+            <tr class="blueRowColor">
+                <th style="padding-top: 1.3%;">
+                    <a href="https://java.com/de/download/" style="text-decoration: none;color: #000;">Java JDK 8</a><br>(Java Development Kit)
+                </th>
+                <td> Das JDK (Java Development Kit) wird ben&ouml;tigt um das Geschriebene vom Entwickler zum sogenannten
+                    Bytecode zu &uuml;bersetzen, welcher
+                    auf allen anderen Platformen und Rechnern anhand der JRE (Java Runtime Environment) ausgef&uuml;hrt
+                    werden kann.
+                </td>
+                <td>beinhaltet die Java JRE 8 bereits (Java Runtime Environment)</td>
+            </tr>
+            <tr class="lightGreyRowColor">
+                <th style="padding-top: 4%;">
+                    <a href="https://www.jetbrains.com/idea/download" style="text-decoration: none;color: #000;">IntelliJ IDEA Ultimate Edition</a>(Entwicklungsumgebung)
+                </th>
+                <td> Eine Entwicklungsumgebung bzw.<br>
+                    IDE (Integrated Development Environment) ist notwendig um als
+                    Entwickler vern&uuml;nftig zu arbeiten. IntelliJ ist nur eine von vielen IDE's, jedoch bietet es
+                    deutlich mehr Methoden und M&ouml;glichkeiten als z.B. Eclipse oder gar Notepad. IDE's bieten sehr
+                    n&uuml;tzliche Features wie Syntax Highlighting, Quelltextformatierung, Projekt Strukturierung und
+                    mehr...
+                <td>
+                    Verf&uuml;gbar als Ultimate (30 Tage Testversion) oder Community Edition (Kostenlose, eingeschr&auml;nkte
+                    Version). <br>Tomcat ist <b>nur in der Ultimate Version verf&uuml;gbar</b>!
+                </td>
+            </tr>
+            <tr class="blueRowColor">
+                <th style="padding-top: 2.5%;"><a href="https://www.apachefriends.org/de/index.html" style="text-decoration: none; color: #000;">Apache Tomcat 8</a></th>
+                <td> Apache Tomcat ist eine Software, die in der Lage ist eine JSP Datei,
+                    also eine Datei die teils aus der Programmiersprache Java und der
+                    Auszeichnungssprache HTML besteht, als zugreifbare Webseite zu starten.
+                </td>
+                <td>
+                    Die Software "Apache XAMPP" wurde im Projekt benutzt, da die Software bereits Tomcat beinhaltet.
+                </td>
+            </tr>
+            <tr class="lightGreyRowColor">
+                <th style="padding-top: 3%;">
+                    <a href="https://git-scm.com/" style="text-decoration: none; color: #000;">Git</a>
+                    &
+                    <a href="https://github.com/" style="text-decoration: none; color: #000;"> Github</a> (Optional)
+                    </a>
+                </th>
+                <td>
+                    Git in Verbindung mit Github.com wird benutzt um eventuell den Zustand
+                    des Projektes als Backup (Repository) auf Github.com hochzuladen.
+                </td>
+                <td>
+                    Git & Github.com sind optional und dienen jediglich als Backup f&uuml;r das Projekt oder eine Iteration des
+                    Projektes.<p id ="description"></p>
+                </td>
+            </tr>
         </tbody>
     </table>
-    <hr id="description">
-    <div class="row">
-        <div class="col-xs-6 redColor">&nbsp;- Wichtige Merkmale des Codes</div>
-        <div class="col-xs-6 w-wrap leftBorderColor">
-            <a href="assets/KlassenDes2tenCoffeemats.png" target="_blank">
-                <img src="assets/KlassenDes2tenCoffeemats.png" width="170" height="120"/>
+    </div>
+    <div class="row col-eq topicBgColor">
+        <div class="col-xs-6 redColor topicBgColor ">Wichtige Merkmale des Codes</div>
+        <div class="col-xs-6 w-wrap explanationBgColor">
+            <div class="fieldDivider"></div>
+            <a href="assets/klassenDes2tenCoffeemats.png" target="_blank">
+                <img src="assets/klassenDes2tenCoffeemats.png"/>
             </a>
             <br>
             Der Wichtigste Teil des Projektes ist die Logik!<br>
             Wenn die Logik hinter der Haube nicht stimmt dann funktioniert nichts als End Resultat.<br>
-            Sobald man das Projekt bzw. den Prozess startet dann müssen die Klassen und Methode wie am Fließband
+            Sobald man das Projekt bzw. den Prozess startet dann m&uuml;ssen die Klassen und Methode wie am Fließband
             etwas einem Produkt / Objekt addieren.<br>
-            Der Bauplan wird Schritt für Schritt innerhalb der Klassen bearbeitet und vollendet.<br>
-            Am Ende muss das gewünschte Produkt auch erscheinen, welches der Benutzer zuvor angeklickt hat.<br>
+            Der Bauplan wird Schritt f&uuml;r Schritt innerhalb der Klassen bearbeitet und vollendet.<br>
+            Am Ende muss das gew&uuml;nschte Produkt auch erscheinen, welches der Benutzer zuvor angeklickt hat.<br>
             <br>
             Innerhalb der Klasse Button wird der Entwurf eines Knopfes erstellt.
-            <a href="assets/KlasseBTN.png" target="_blank">
-                <img src="assets/KlasseBTN.png" width="250" height="137"/>
+            <a href="assets/klasseBTN.png" target="_blank">
+                <img src="assets/klasseBTN.png" width="474"/>
             </a>
-
-            <hr style="height: 1px; width: 99%; margin:10px;line-height:2px;background-color: #cccccc; border:0 none;"/>
+            <hr>
             Der <b>1. Schritt</b> beschreibt das Verfahren, worin 2 Variable initialisiert werden.<br><br>
             Die Zeile <em class="marker orangeMarker">private Machine machine</em> erstellt <b>keine</b> neue Maschine
             sondern gibt
-            der Klasse eine Referenz zum Objekt <em class="marker yellowMarker">Machine</em> worauf dann der <em
-                title="Der Knopf greif auf die gleiche 'Machine' wie die Main Klasse">Knopf zugreifen kann.</em><br>
-            Private besagt, dass was auch immer danach folgt, nur in der Klasse zugreifbar ist.<br>
-            Wäre ja ziemlich sinnlos in einem Knopf, welcher nur ein Signal abgibt, eine komplette Maschine zu
+            der Klasse eine Referenz zum Objekt <em class="marker yellowMarker">Machine</em> worauf dann der
+            <em title="Der Knopf greift auf die gleiche Maschine wie die Main Klasse, die gleichen Eigentschaften">Knopf
+                zugreifen kann.</em>
+            <br>Private besagt, dass was auch immer danach folgt, nur in der Klasse zugreifbar ist.<br>
+            W&auml;re ja ziemlich sinnlos in einem Knopf, welcher nur ein Signal abgibt, eine komplette Maschine zu
             erstellen.
-
-            <hr style="height: 1px; width: 99%; margin:10px;line-height:2px;background-color: #cccccc; border:0 none;"/>
+            <hr>
             Der <b>2. Schritt</b> legt einen sogenannten Constructor an.<br>
             Ein Constructor ist im einfachsten Sinne eine Methode welche aufgerufen wird sobald eine Instanz der Klasse
             erstellt wird.<br><br>
             Es wird immer ein Constructor erstellt, falls keiner vorhanden ist.<br>
-            Anhand des Schlüsselwortes <em class="marker yellowMarker">this</em> wird <br>
-            die Variabel innerhalb der Klasse mit <br>dem Wert
+            Anhand des Schl&uuml;sselwortes <em class="marker yellowMarker">this</em> wird <br>
+            die Variable innerhalb der Klasse mit <br>dem Wert
             der nach dem Gleichzeichen folgt entsprechen.
-
-            <hr style="height: 1px; width: 99%; margin:10px;line-height:2px;background-color: #cccccc; border:0 none;"/>
+            <hr>
             Im <b>3. Schritt</b> wird eine Methode namens<br><em class="marker yellowMarker">press()</em> erstellt die
-            aufgrund des <em class="marker yellowMarker">void</em> keinen<br>Wert zurückgibt.<br><br>
+            aufgrund des <em class="marker yellowMarker">void</em> keinen<br>Wert zur&uuml;ckgibt.<br><br>
             Die Machine Referenz welche wir am Anfang definiert haben wird nun zum Einsatz gerufen, indem wir die
             pressed Methode der Klasse Machine aufrufen.<br>
             Hinzu wurde ein getter (Methode) erstellt ,um die Wert von der Variable buttonId von außen auszulesen, da
             die Variable ButtonId <em class="marker orangeMarker">private</em> ist.
-            Dazu wird in den Klammern der benötigte Parameter übergeben. In dem Falle wird ein Button Objekt benötigt,
-            somit können wir mit <em class="marker yellowMarker">this</em> den Button selbst übergeben.
-
-            <hr style="height: 1px; width: 99%; margin:10px;line-height:2px;background-color: #cccccc; border:0 none;"/>
-            Einfacher gesagt:<br>Wir erstellen den Bauplan für einen Knopf in der wir eine Methode erstellen welche,
+            Dazu wird in den Klammern der ben&ouml;tigte Parameter &uuml;bergeben. In dem Falle wird ein Button Objekt ben&ouml;tigt,
+            somit k&ouml;nnen wir mit <em class="marker yellowMarker">this</em> den Button selbst &uuml;bergeben.
+            <hr>
+            Einfacher gesagt:<br>Wir erstellen den Bauplan f&uuml;r einen Knopf in der wir eine Methode erstellen welche,
             sobald sie aufgerufen wird, in der Klasse Machine eine Methode aufruft und die Klasse Button selbst
-            übergibt da die Methode <em class="marker yellowMarker">pressed();</em> einen Knopf als Parameter benötigt.
-
-            <hr style="height: 1px; width: 99%; margin:10px;line-height:2px;background-color: #cccccc; border:0 none;"/>
-            Die Erklärung zuvor ist in so gut wie allen Klassen zu finden mit ein paar Ausnahmen.<br>
-            In der Klasse Machine existieren Methoden, welche bestimmte Überprüftungen ausführen um
-            Schlupflöcher oder
-            Bugs vorab zu vermeiden.<br>
+            &uuml;bergibt da die Methode <em class="marker yellowMarker">pressed();</em> einen Knopf als Parameter ben&ouml;tigt.
+            <hr>
+            Die Erkl&auml;rung zuvor ist in so gut wie allen Klassen zu finden mit ein paar Ausnahmen.<br>
+            In der Klasse Machine existieren Methoden, welche bestimmte <br>&uuml;berpr&uuml;ftungen ausf&uuml;hren um den Status der Beh&auml;lter vorab zu &uuml;berpr&uuml;fen.<br>
             <a href="assets/Ueberpruefungen.png" target="_blank">
-                <img src="assets/Ueberpruefungen.png" width="70%"/>
-            </a>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-xs-6 redColor">
-            <p class="questionKeyWord">&nbsp;- Fazit</p>
-        </div>
-        <div class="col-xs-6 w-wrap leftBorderColor">
+                <img src="assets/Ueberpruefungen.png" width="474"/>
+            </a><br>
+            <b>J</a></b>ava <b>S</b>erver <b>P</b>ages sind Webseiten die aus Java Anweisungen und HTML Strukturen bestehen.<br>
+            Die Seiten werden jedoch Generiert wie z.B.: Hotel- und Flugbuchungs Webseiten. Diese Seiten werden sobald alle Anweisungen ausgef&uuml;hrt sind, weggeworfen (Alle Informationen werden wieder <br>auf Null gesetzt).
             <br>
-            Mit dem Projekt "Kaffeemaschine bzw. Coffeemat" wurde die Objekt Orientierte Programmierung an erster Stelle
-            als Lernziel gesetzt.<br>
-            Neben der Objekt Orientierten Programmierung wurde das Erstellen von JSP bzw.<br> <b>J</a></b>ava <b>S</b>erver
-            <b>P</b>ages erlernt, womit die Logik der Objekt Orientierten Programmierung visuell in einer HTML-Webseite
-            dargestellt wurde.<br>
-            Die JSP baute die Schnittstelle zwischen HTML und Java auf, ohne dabei selbst die Information bzw. die Logik
-            des Java Programmes in die Webseite zu implementieren.
+            Deshalb ist es Sinnvoll Informationen in Form von (z.B.) Cookies oder Cache zu speichern.
+            <br>
+            Um Java Klassen in JSP zu importieren wird folgendes geschrieben:<br>
+            <code class="marker orangeMarker"><%@ page import="<em>Package Pfad.Klasse</em>" %></code><br>
+            Exemplar: <p class="spoiler"><%@ page import="com.ifm.azubi.coffeemat.v2.Ingredient" %></p><br>
+
+            Sobald man alle Klasse importiert hat, f&auml;ngt die JSP nun mit <code class="marker orangeMarker"><%</code> an und<br> endet mit <code class="marker orangeMarker">%></code>.<br>
+            Somit wird der Java Quelltext vom HTML Quelltext unterschieden.<br>
+            Nun kann man seine Java Anweisungen aufschreiben, dennoch ist es schlau erstmal die HTML Struktur aufzubauen.<br>
+            Dies gelingt indem man: <br><code class="marker orangeMarker"><%@ page contentType="text/html;charset=UTF-8" language="java"%></code><br>
+            aufschreibt um dem nachfolgendem Dokument die ben&ouml;tigten Informationen<br>
+            wie die Zeichencodierung und Sprachtyp &uuml;bergibt.
+            <img src="assets/jspContentType.png" width="474px">
+            <div style="height: 6px;"></div><br>
+            Es ist immer m&ouml;glich im HTML Quelltext den Wert von zuvor geschriebenen <br>(<code class="marker orangeMarker"><%</code> und <code class="marker orangeMarker">%></code>) Java Variablen abzurufen.<br>
+            Dies erfolgt indem man an der gew&uuml;nschten Stelle im HTML Code ein <code class="marker orangeMarker"><%=</code> und dazu noch den Namen der Varaible, so wie man es
+            auch in Java schreiben w&uuml;rde, zu letzt wird noch folgendes angeh&auml;ngt <code class="marker orangeMarker">%></code>.<br>
+            <img src=""/>
+            Die oben genannte Methode kann auch benutzt werden um HTML Attribute auszuf&uuml;llen (z.B: f&uuml;r value" oder height den Wert einer
+            int Variable &uuml;bergeben).
         </div>
     </div>
+        <div class ="fieldDivider"> </div>
+        <div class="row col-eq topicBgColor">
+            <div class="col-xs-6 redColor">Fazit</div>
+            <div class="col-xs-6 w-wrap explanationBgColor">
+                Mit dem Projekt "Kaffeemaschine bzw. Coffeemat" wurde die Objekt Orientierte Programmierung an erster Stelle
+                als Lernziel gesetzt.<br>
+                Neben der Objekt Orientierten Programmierung wurde das Erstellen von JSP bzw.<br> <b>J</a></b>ava <b>S</b>erver
+                <b>P</b>ages erlernt, womit die Logik der Objekt Orientierten Programmierung visuell in einer HTML-Webseite
+                dargestellt wurde.<br>
+                Die JSP baute die Schnittstelle zwischen HTML und Java auf, ohne dabei selbst die Information bzw. die Logik
+                des Java Programmes in die Webseite zu implementieren.
+            </div>
+        </div>
     <hr id="bottom">
-    <div id="footer" data-toggle="tooltip">
-        <a href="#top" title="Throw me back to the top"><i class="glyphicon glyphicon-menu-up footerArrowImg"
-                                                           aria-hidden="true"></i></a>
-        <div style="width:92.8%; display: inline;"></div>
-        <a href="#bottom" title="Throw me back to the bottom"><i class="glyphicon glyphicon-menu-down footerArrowImg"
-                                                                 aria-hidden="true"></i></a>
+        <div id="footer" data-toggle="tooltip">
+            <a href="#top" title="Throw me back to the top"><i class="glyphicon glyphicon-menu-up footerArrowImg" aria-hidden="true"></i></a>
+            <div style="width:92.8%; display: inline;"></div>
+            <a href="#bottom" title="Throw me back to the bottom"><i class="glyphicon glyphicon-menu-down footerArrowImg" aria-hidden="true"></i></a>
+        </div>
+        <br>
     </div>
-    <br>
-</div>
-<script src="js/JavaScript.js"></script>
 </body>
 </html>
