@@ -1,14 +1,9 @@
 $(document).ready(function () {
-    var red;
-    var green;
-    var blue;
-
-    function reactiveNavBar() {
-        red = 255;
-        green = 255;
-        blue = 255;
-        red = red - 1;
-        $("#navBar").css("background-color: ", red);
+    function navBarFloat() {
+        $("#navBar").css({"position": "fixed", "-index": "99"});
+        if ($(document).scrollTop() < 40) {
+            $("#navBar").css({"position": "relative", "-index": "99"});
+        }
     }
 
     function positionFooter() {
@@ -28,8 +23,9 @@ $(document).ready(function () {
             positionFooter();
         }).on("scroll", function () {
         positionFooter();
-        reactiveNavBar();
+        navBarFloat();
     });
 
+    navBarFloat();
     positionFooter();
 });
